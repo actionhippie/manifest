@@ -1,0 +1,59 @@
+---
+name: 'manifest'
+description: 'Upload Docker image manifests'
+author: 'actionhippie'
+
+inputs:
+  username:
+    description: |
+      Username for the used registry
+    required: false
+
+  password:
+    description: |
+      Password for the used registry
+    required: false
+
+  insecure:
+    description: |
+      Enable insecure access to the used registry
+    required: false
+    default: 'false'
+
+  debug:
+    description: |
+      Enable debug output for manifest-tool
+    required: false
+    default: 'false'
+
+  spec:
+    description: |
+      Path manifest file in YAML format
+    required: false
+
+  platforms:
+    description: |
+      List of the platforms that images should be pushed for
+    required: false
+
+  template:
+    description: |
+      Pattern the source images have, OS and ARCH will be replaced
+    required: false
+
+  target:
+    description: |
+      Name of the manifest list image that is going to be produced
+    required: false
+
+  ignore_missing:
+    description: |
+      Only warn on missing images defined in spec or list
+    required: true
+    default: 'false'
+
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/actionhippie/manifest:v1'
+
+...

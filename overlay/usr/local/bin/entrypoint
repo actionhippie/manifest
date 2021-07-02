@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+pushd "${GITHUB_WORKSPACE}" >/dev/null
+    ARGS=()
+
+    if [[ -n "${INPUT_DEBUG}" && "${INPUT_DEBUG}" == "true" ]]; then
+        ARGS+=(--debug)
+    fi
+
+    if [[ -n "${INPUT_INSECURE}" && "${INPUT_INSECURE}" == "true" ]]; then
+        ARGS+=(--insecure)
+    fi
+
+    if [[ -n "${INPUT_USERNAME}" ]]; then
+        ARGS+=(--username "${INPUT_USERNAME}")
+    fi
+
+    if [[ -n "${INPUT_PASSWORD}" ]]; then
+        ARGS+=(--password "${INPUT_PASSWORD}")
+    fi
+
+    if [[ -n "${INPUT_SPEC}" ]]; then
+        ARGS+=(push from-spec)
+
+        if [[ -n "${INPUT_IGNORE_MISSING}" && "${INPUT_IGNORE_MISSING}" == "true" ]]; then
+            ARGS+=(---ignore-missing)
+        fi
+
+        ARGS+=("${INPUT_SPEC}")
+    else
+        ARGS+=(push from-args)
+
+        if [[ -n "${INPUT_IGNORE_MISSING}" && "${INPUT_IGNORE_MISSING}" == "true" ]]; then
+            ARGS+=(---ignore-missing)
+        fi
+
+        if [[ -n "${INPUT_PLATFORMS}" ]]; then
+            ARGS+=(--platforms "${INPUT_PLATFORMS}")
+        fi
+
+        if [[ -n "${INPUT_TEMPLATE}" ]]; then
+            ARGS+=(--template "${INPUT_TEMPLATE}")
+        fi
+
+        if [[ -n "${INPUT_TARGET}" ]]; then
+            ARGS+=(--target "${INPUT_TARGET}")
+        fi
+    fi
+
+    manifest-tool --version
+    manifest-tool "${ARGS[@]}"
+popd >/dev/null
