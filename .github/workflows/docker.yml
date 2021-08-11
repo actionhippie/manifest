@@ -24,16 +24,16 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           images: ghcr.io/${{ github.repository }}
+          flavor: |
+            latest=true
           tags: |
             type=ref,enable=true,event=branch
             type=ref,enable=true,event=tag
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
           labels: |
-            maintainer=Thomas Boerger <thomas@webhippie.de>
-            org.opencontainers.image.title=manifest
-            org.opencontainers.image.description=Action to upload Docker image manifests
             org.opencontainers.image.vendor=Webhippie
+            maintainer=Thomas Boerger <thomas@webhippie.de>
 
       - name: Setup QEMU
         id: qemu
