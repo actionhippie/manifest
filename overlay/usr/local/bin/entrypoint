@@ -24,7 +24,7 @@ pushd "${GITHUB_WORKSPACE}" >/dev/null
         ARGS+=(push from-spec)
 
         if [[ -n "${INPUT_IGNORE_MISSING}" && "${INPUT_IGNORE_MISSING}" == "true" ]]; then
-            ARGS+=(---ignore-missing)
+            ARGS+=(--ignore-missing)
         fi
 
         ARGS+=("${INPUT_SPEC}")
@@ -32,7 +32,7 @@ pushd "${GITHUB_WORKSPACE}" >/dev/null
         ARGS+=(push from-args)
 
         if [[ -n "${INPUT_IGNORE_MISSING}" && "${INPUT_IGNORE_MISSING}" == "true" ]]; then
-            ARGS+=(---ignore-missing)
+            ARGS+=(--ignore-missing)
         fi
 
         if [[ -n "${INPUT_PLATFORMS}" ]]; then
