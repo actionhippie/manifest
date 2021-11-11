@@ -28,7 +28,7 @@ pushd "${GITHUB_WORKSPACE}" >/dev/null
             ARGS+=(--ignore-missing)
         fi
 
-        manifest-tool "${ARGS[*]} ${INPUT_SPEC}"
+        manifest-tool "${ARGS[@]} ${INPUT_SPEC}"
     else
         for TARGET in ${INPUT_TARGET}; do
             VERSION=$(echo "${TARGET}" | cut -d: -f2)
@@ -50,7 +50,7 @@ pushd "${GITHUB_WORKSPACE}" >/dev/null
                 LOOP+=(--target "${TARGET}")
             fi
 
-            manifest-tool "${LOOP[*]}"
+            manifest-tool "${LOOP[@]}"
         done
     fi
 popd >/dev/null
