@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
+manifest-tool --version
 pushd "${GITHUB_WORKSPACE}" >/dev/null
     ARGS=()
 
@@ -27,27 +28,29 @@ pushd "${GITHUB_WORKSPACE}" >/dev/null
             ARGS+=(--ignore-missing)
         fi
 
-        ARGS+=("${INPUT_SPEC}")
+        manifest-tool "${ARGS[*]} ${INPUT_SPEC}"
     else
-        ARGS+=(push from-args)
+        for TARGET in ${INPUT_TARGET}; do
+            VERSION=$(echo "${TARGET}" | cut -d: -f2)
+            LOOP=("${ARGS[@]}" push from-args)
 
-        if [[ -n "${INPUT_IGNORE_MISSING}" && "${INPUT_IGNORE_MISSING}" == "true" ]]; then
-            ARGS+=(--ignore-missing)
-        fi
+            if [[ -n "${INPUT_IGNORE_MISSING}" && "${INPUT_IGNORE_MISSING}" == "true" ]]; then
+                LOOP+=(--ignore-missing)
+            fi
 
-        if [[ -n "${INPUT_PLATFORMS}" ]]; then
-            ARGS+=(--platforms "${INPUT_PLATFORMS}")
-        fi
+            if [[ -n "${INPUT_PLATFORMS}" ]]; then
+                LOOP+=(--platforms "${INPUT_PLATFORMS}")
+            fi
 
-        if [[ -n "${INPUT_TEMPLATE}" ]]; then
-            ARGS+=(--template "${INPUT_TEMPLATE}")
-        fi
+            if [[ -n "${INPUT_TEMPLATE}" ]]; then
+                LOOP+=(--template "${INPUT_TEMPLATE/VERSION/$VERSION}")
+            fi
 
-        if [[ -n "${INPUT_TARGET}" ]]; then
-            ARGS+=(--target "${INPUT_TARGET}")
-        fi
+            if [[ -n "${TARGET}" ]]; then
+                LOOP+=(--target "${TARGET}")
+            fi
+
+            manifest-tool "${LOOP[*]}"
+        done
     fi
-
-    manifest-tool --version
-    manifest-tool "${ARGS[@]}"
 popd >/dev/null
