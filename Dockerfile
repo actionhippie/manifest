@@ -1,21 +1,20 @@
 FROM alpine:3.15 as build
 
 # renovate: datasource=github-releases depName=estesp/manifest-tool
-ENV MANIFEST_VERSION=2.0.0
+ENV MANIFEST_VERSION=1.0.3
 
 ARG TARGETARCH
 
 RUN apk add --no-cache curl && \
-    curl -sSLo- https://github.com/estesp/manifest-tool/releases/download/v${MANIFEST_VERSION}/binaries-manifest-tool-${MANIFEST_VERSION}.tar.gz | tar xvzf - -C /tmp && \
     case "${TARGETARCH}" in \
     'amd64') \
-        cp /tmp/manifest-tool-linux-amd64 /tmp/manifest-tool; \
+        curl -sSLo /tmp/manifest-tool https://github.com/estesp/manifest-tool/releases/download/v${MANIFEST_VERSION}/manifest-tool-linux-amd64; \
         ;; \
     'arm64') \
-        cp /tmp/manifest-tool-linux-arm64 /tmp/manifest-tool; \
+        curl -sSLo /tmp/manifest-tool https://github.com/estesp/manifest-tool/releases/download/v${MANIFEST_VERSION}/manifest-tool-linux-arm64; \
         ;; \
     'arm') \
-        cp /tmp/manifest-tool-linux-armv6 /tmp/manifest-tool; \
+        curl -sSLo /tmp/manifest-tool https://github.com/estesp/manifest-tool/releases/download/v${MANIFEST_VERSION}/manifest-tool-linux-armv6; \
         ;; \
     *) echo >&2 "error: unsupported architecture '${TARGETARCH}'"; exit 1 ;; \
     esac && \
