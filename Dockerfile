@@ -1,4 +1,4 @@
-FROM alpine:3.17 as build
+FROM alpine:3.18 as build
 
 # renovate: datasource=github-releases depName=estesp/manifest-tool
 ENV MANIFEST_VERSION=2.0.8
@@ -21,7 +21,7 @@ RUN apk add --no-cache curl && \
     esac && \
     chmod 755 /tmp/manifest-tool
 
-FROM alpine:3.17
+FROM alpine:3.18
 
 RUN apk add --no-cache bash
 ENTRYPOINT ["/usr/local/bin/entrypoint"]
