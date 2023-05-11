@@ -1,6 +1,6 @@
 # manifest
 
-[![Current Tag](https://img.shields.io/github/v/tag/actionhippie/manifest?sort=semver)](https://github.com/actionhippie/manifest) [![Docker Build](https://github.com/actionhippie/manifest/workflows/docker/badge.svg)](https://github.com/actionhippie/manifest/actions?query=workflow%3Adocker)
+[![Current Tag](https://img.shields.io/github/v/tag/actionhippie/manifest?sort=semver)](https://github.com/actionhippie/manifest) [![Docker Build](https://github.com/actionhippie/manifest/workflows/docker/badge.svg)](https://github.com/actionhippie/manifest/actions/workflows/docker.yml)
 
 [GitHub Action](https://github.com/features/actions) to upload Docker image manifests.
 
