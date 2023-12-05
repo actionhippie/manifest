@@ -1,7 +1,7 @@
 FROM alpine:3.18 as build
 
 # renovate: datasource=github-releases depName=estesp/manifest-tool
-ENV MANIFEST_VERSION=2.1.3
+ENV MANIFEST_VERSION=2.1.4
 
 ARG TARGETARCH
 
