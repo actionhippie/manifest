@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/actionhippie/manifest/compare/v1.2.0...v1.3.0) (2023-12-11)
+
+
+### Features
+
+* **deps:** update alpine docker tag to v3.19 ([390566f](https://github.com/actionhippie/manifest/commit/390566f51e0466a990092655893aa9d40455d00f))
+
+
+### Bugfixes
+
+* **deps:** update dependency estesp/manifest-tool to v2.1.4 ([50c0b63](https://github.com/actionhippie/manifest/commit/50c0b63cb7c9da13a35d650174225fd581aa0497))
+
 ## [1.2.0](https://github.com/actionhippie/manifest/compare/v1.1.0...v1.2.0) (2023-11-06)
 
 
