@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/actionhippie/manifest/compare/v1.3.2...v1.4.0) (2024-05-27)
+
+
+### Features
+
+* **deps:** update alpine docker tag to v3.20 ([4710ae8](https://github.com/actionhippie/manifest/commit/4710ae8ebde77fa859393d5fbe568d2b38a4b3b2))
+
 ## [1.3.2](https://github.com/actionhippie/manifest/compare/v1.3.1...v1.3.2) (2024-03-18)
 
 
