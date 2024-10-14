@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/actionhippie/manifest/compare/v1.4.1...v1.4.2) (2024-10-14)
+
+
+### Bugfixes
+
+* **deps:** update dependency estesp/manifest-tool to v2.1.8 ([58740b1](https://github.com/actionhippie/manifest/commit/58740b1c3c4ff5057296c3c6e02dbe53fcb5e8a4))
+
 ## [1.4.1](https://github.com/actionhippie/manifest/compare/v1.4.0...v1.4.1) (2024-07-08)
 
 
