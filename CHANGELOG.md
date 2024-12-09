@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/actionhippie/manifest/compare/v1.4.2...v1.5.0) (2024-12-09)
+
+
+### Features
+
+* **deps:** update alpine docker tag to v3.21 ([#28](https://github.com/actionhippie/manifest/issues/28)) ([3d7a706](https://github.com/actionhippie/manifest/commit/3d7a7063a14e568376d8bb6f6270bc18b93a6419))
+
 ## [1.4.2](https://github.com/actionhippie/manifest/compare/v1.4.1...v1.4.2) (2024-10-14)
 
 
