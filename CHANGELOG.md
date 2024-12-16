@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/actionhippie/manifest/compare/v1.5.0...v1.5.1) (2024-12-16)
+
+
+### Bugfixes
+
+* **deps:** update dependency estesp/manifest-tool to v2.1.9 ([#29](https://github.com/actionhippie/manifest/issues/29)) ([33c7d43](https://github.com/actionhippie/manifest/commit/33c7d435cc9b2d9c97456c10eb0872c84d8b3718))
+
 ## [1.5.0](https://github.com/actionhippie/manifest/compare/v1.4.2...v1.5.0) (2024-12-09)
 
 
