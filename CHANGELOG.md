@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.6.0](https://github.com/actionhippie/manifest/compare/v1.5.1...v1.6.0) (2025-07-07)
+
+
+### Features
+
+* **deps:** update alpine docker tag to v3.22 ([#31](https://github.com/actionhippie/manifest/issues/31)) ([d3f94b2](https://github.com/actionhippie/manifest/commit/d3f94b26b18957ac2f18073b30ac7fb172e461f3))
+* **deps:** update dependency estesp/manifest-tool to v2.2.0 ([#30](https://github.com/actionhippie/manifest/issues/30)) ([71c5a76](https://github.com/actionhippie/manifest/commit/71c5a7680ad401ac79459f36ff8563f4394c5696))
+* replace release workflow and add workflow langserver ref ([8fcf8bc](https://github.com/actionhippie/manifest/commit/8fcf8bc32c18569fc6ae402b00c57257a7e2217d))
+
 ## [1.5.1](https://github.com/actionhippie/manifest/compare/v1.5.0...v1.5.1) (2024-12-16)
 
 
