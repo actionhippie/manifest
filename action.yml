@@ -1,7 +1,11 @@
 ---
-name: 'manifest'
+# yaml-language-server: $schema=https://www.schemastore.org/github-action.json
+name: 'actionhippie-manifest'
 description: 'Upload Docker image manifests'
 author: 'actionhippie'
+branding:
+  icon: cast
+  color: green
 
 inputs:
   username:
