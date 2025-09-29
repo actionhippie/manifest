@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.2](https://github.com/actionhippie/manifest/compare/v1.6.1...v1.6.2) (2025-09-29)
+
+
+### Bugfixes
+
+* **deps:** pin alpine docker tag to 4bcff63 ([#35](https://github.com/actionhippie/manifest/issues/35)) ([eb8e66d](https://github.com/actionhippie/manifest/commit/eb8e66da75a6c8f16b62b1954ada476f7a83d3b2))
+
 ## [1.6.1](https://github.com/actionhippie/manifest/compare/v1.6.0...v1.6.1) (2025-09-28)
 
 
