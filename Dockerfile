@@ -14,9 +14,6 @@ RUN apk add --no-cache curl && \
     'arm64') \
         cp /tmp/manifest-tool-linux-arm64 /tmp/manifest-tool; \
         ;; \
-    'arm') \
-        cp /tmp/manifest-tool-linux-armv6 /tmp/manifest-tool; \
-        ;; \
     *) echo >&2 "error: unsupported architecture '${TARGETARCH}'"; exit 1 ;; \
     esac && \
     chmod 755 /tmp/manifest-tool
