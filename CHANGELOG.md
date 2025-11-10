@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/actionhippie/manifest/compare/v1.6.3...v1.7.0) (2025-11-10)
+
+
+### Features
+
+* integrate amd64 and arm64 support ([0b5693c](https://github.com/actionhippie/manifest/commit/0b5693ce8e5bd4181cd09284b61b2fca971d3463))
+
 ## [1.6.3](https://github.com/actionhippie/manifest/compare/v1.6.2...v1.6.3) (2025-10-13)
 
 ## [1.6.2](https://github.com/actionhippie/manifest/compare/v1.6.1...v1.6.2) (2025-09-29)
