@@ -1,4 +1,4 @@
-FROM alpine:3.23@sha256:51183f2cfa6320055da30872f211093f9ff1d3cf06f39a0bdb212314c5dc7375 AS build
+FROM alpine:3.23@sha256:be171b562d67532ea8b3c9d1fc0904288818bb36fc8359f954a7b7f1f9130fb2 AS build
 
 # renovate: datasource=github-releases depName=estesp/manifest-tool
 ENV MANIFEST_VERSION=2.2.1
@@ -18,7 +18,7 @@ RUN apk add --no-cache curl && \
     esac && \
     chmod 755 /tmp/manifest-tool
 
-FROM alpine:3.23@sha256:51183f2cfa6320055da30872f211093f9ff1d3cf06f39a0bdb212314c5dc7375
+FROM alpine:3.23@sha256:be171b562d67532ea8b3c9d1fc0904288818bb36fc8359f954a7b7f1f9130fb2
 
 RUN apk add --no-cache bash
 ENTRYPOINT ["/usr/local/bin/entrypoint"]
