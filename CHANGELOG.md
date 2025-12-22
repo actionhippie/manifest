@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.8.1](https://github.com/actionhippie/manifest/compare/v1.8.0...v1.8.1) (2025-12-22)
+
 ## [1.8.0](https://github.com/actionhippie/manifest/compare/v1.7.0...v1.8.0) (2025-12-08)
 
 ## [1.7.0](https://github.com/actionhippie/manifest/compare/v1.6.3...v1.7.0) (2025-11-10)
