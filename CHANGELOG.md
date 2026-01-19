@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.8.2](https://github.com/actionhippie/manifest/compare/v1.8.1...v1.8.2) (2026-01-19)
+
+### Bugfixes
+
+* always add a v prefix to image refs on release ([878b1aa](https://github.com/actionhippie/manifest/commit/878b1aa48c7af100e7d8c07f593eb088afc91304))
+
+### Miscellaneous
+
+* always include single quotes for release config ([b45b338](https://github.com/actionhippie/manifest/commit/b45b3386969db1bc6175572e87080ce7e4596cd6))
+* **flake:** updated lockfile [skip ci] ([f32691e](https://github.com/actionhippie/manifest/commit/f32691ed42921114a528db307b600028d0140217))
+* **flake:** updated lockfile [skip ci] ([52cedf5](https://github.com/actionhippie/manifest/commit/52cedf5507741497dddd77fd9a4dffda20ca71c4))
+* **flake:** updated lockfile [skip ci] ([6679327](https://github.com/actionhippie/manifest/commit/66793275fa6d58ef679e2848c9f8663a7c834629))
+* **flake:** updated lockfile [skip ci] ([79d80d8](https://github.com/actionhippie/manifest/commit/79d80d8d148ff865ff55dee47840aa80e2e696d4))
+* **flake:** updated lockfile [skip ci] ([e588038](https://github.com/actionhippie/manifest/commit/e588038f21d034bb15843e0b29e29b2ad8388edb))
+* use correct categories for releaserc to fix changelog ([7fc7cab](https://github.com/actionhippie/manifest/commit/7fc7cab4f7946de9c8d3c0cc9ff8653051178c00))
+
 ## [1.8.1](https://github.com/actionhippie/manifest/compare/v1.8.0...v1.8.1) (2025-12-22)
 
 ## [1.8.0](https://github.com/actionhippie/manifest/compare/v1.7.0...v1.8.0) (2025-12-08)
