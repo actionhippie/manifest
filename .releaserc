@@ -108,7 +108,7 @@
                             "action.yml"
                         ],
                         "from": "'docker://ghcr.io/actionhippie/manifest:.*'",
-                        "to": "'docker://ghcr.io/actionhippie/manifest:${nextRelease.version}'",
+                        "to": "'docker://ghcr.io/actionhippie/manifest:v${nextRelease.version}'",
                         "results": [
                             {
                                 "file": "action.yml",
