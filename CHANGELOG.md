@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.8.3](https://github.com/actionhippie/manifest/compare/v1.8.2...v1.8.3) (2026-02-02)
+
+### Dependencies
+
+* **patch:** update alpine:3.23 docker digest to 2510918 ([#59](https://github.com/actionhippie/manifest/issues/59)) ([bcb6816](https://github.com/actionhippie/manifest/commit/bcb6816580328b3c69fc4b43b7c1bad5267a7afc))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([4d4f8af](https://github.com/actionhippie/manifest/commit/4d4f8af44916c5a4b6f284b31a5528318e773ca4))
+
 ## [1.8.2](https://github.com/actionhippie/manifest/compare/v1.8.1...v1.8.2) (2026-01-19)
 
 ### Bugfixes
