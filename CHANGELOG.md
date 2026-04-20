@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.8.4](https://github.com/actionhippie/manifest/compare/v1.8.3...v1.8.4) (2026-04-20)
+
+### Dependencies
+
+* **patch:** update alpine:3.23 docker digest to 5b10f43 ([#67](https://github.com/actionhippie/manifest/issues/67)) ([e5523f3](https://github.com/actionhippie/manifest/commit/e5523f3328a72b08e553294076f2365c6edb3094))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([c1371eb](https://github.com/actionhippie/manifest/commit/c1371eb324505d829cc7d5bfc40e21631d0b83ed))
+* **flake:** updated lockfile [skip ci] ([5489c39](https://github.com/actionhippie/manifest/commit/5489c3948ac772bce483e9a8d851bd94459ab8fe))
+* **flake:** updated lockfile [skip ci] ([1bd4ca5](https://github.com/actionhippie/manifest/commit/1bd4ca52a1f4ec135c8e925e8c8e1bbd52c0f74e))
+* **flake:** updated lockfile [skip ci] ([40147da](https://github.com/actionhippie/manifest/commit/40147dacadc6f780ffaa0cde30fecfa598362414))
+* **flake:** updated lockfile [skip ci] ([e5e1f54](https://github.com/actionhippie/manifest/commit/e5e1f548b5f0260a5ac9628114aa3e02888ca8b8))
+* **flake:** updated lockfile [skip ci] ([c1aab24](https://github.com/actionhippie/manifest/commit/c1aab24847ff844884403ab3d2696a96ad642478))
+* **flake:** updated lockfile [skip ci] ([22cbd74](https://github.com/actionhippie/manifest/commit/22cbd74734de2f554e2ac0a127dc096dce0562d9))
+* **flake:** updated lockfile [skip ci] ([79e4f4a](https://github.com/actionhippie/manifest/commit/79e4f4a2ee75fb9d2ab444093b457dba8502d499))
+* **flake:** updated lockfile [skip ci] ([16d4c41](https://github.com/actionhippie/manifest/commit/16d4c416b623d7b5986a652e0e2bf4df0825c382))
+* **flake:** updated lockfile [skip ci] ([e62ac3b](https://github.com/actionhippie/manifest/commit/e62ac3bd444f5eef764c4eaf9b8d6cae3716ce2b))
+* **flake:** updated lockfile [skip ci] ([9d21888](https://github.com/actionhippie/manifest/commit/9d21888fdfcc09373ddbad49745034457f6c1b12))
+
 ## [1.8.3](https://github.com/actionhippie/manifest/compare/v1.8.2...v1.8.3) (2026-02-02)
 
 ### Dependencies
