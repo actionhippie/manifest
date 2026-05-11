@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.8.5](https://github.com/actionhippie/manifest/compare/v1.8.4...v1.8.5) (2026-05-11)
+
+### Dependencies
+
+* **patch:** update dependency estesp/manifest-tool to v2.2.2 ([#68](https://github.com/actionhippie/manifest/issues/68)) ([0c4f2d1](https://github.com/actionhippie/manifest/commit/0c4f2d1610b45226b39a34eddfd642d9c60a2d97))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([58fc2d4](https://github.com/actionhippie/manifest/commit/58fc2d4306d3db182f7b48c5cdadc9cc0cb08661))
+* **flake:** updated lockfile [skip ci] ([4b0b810](https://github.com/actionhippie/manifest/commit/4b0b8108e5c19478cd3e243d3e0a09028586d102))
+* **flake:** updated lockfile [skip ci] ([d0826aa](https://github.com/actionhippie/manifest/commit/d0826aa4fc3e060763564ffc655dc50b9c9fa58e))
+
 ## [1.8.4](https://github.com/actionhippie/manifest/compare/v1.8.3...v1.8.4) (2026-04-20)
 
 ### Dependencies
