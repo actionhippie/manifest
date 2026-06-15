@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.9.0](https://github.com/actionhippie/manifest/compare/v1.8.5...v1.9.0) (2026-06-15)
+
+### Dependencies
+
+* **minor:** update alpine docker tag to v3.24 ([#69](https://github.com/actionhippie/manifest/issues/69)) ([c0a0000](https://github.com/actionhippie/manifest/commit/c0a0000f59e0c90392d620f31ceb4fd642959161))
+* **patch:** update docker digests ([#70](https://github.com/actionhippie/manifest/issues/70)) ([e51e9d9](https://github.com/actionhippie/manifest/commit/e51e9d9f1620dfe1a0500157d2f3a14742998a65))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([9fbaaaa](https://github.com/actionhippie/manifest/commit/9fbaaaa222bec5f4b5fcc71a507f60f0b1166bae))
+* **flake:** updated lockfile [skip ci] ([e2e3ee2](https://github.com/actionhippie/manifest/commit/e2e3ee2e100db4dfc49239c415dd434adebf1d8e))
+* **flake:** updated lockfile [skip ci] ([46034fb](https://github.com/actionhippie/manifest/commit/46034fb865d7ee0d19de514f11ca0846c1803466))
+* **flake:** updated lockfile [skip ci] ([74d49eb](https://github.com/actionhippie/manifest/commit/74d49eb45ea57af84bc17a4022b23f1c10bee4d1))
+* **flake:** updated lockfile [skip ci] ([b734e04](https://github.com/actionhippie/manifest/commit/b734e04bc8c23b92e7a9ec55b255f809896143c2))
+
 ## [1.8.5](https://github.com/actionhippie/manifest/compare/v1.8.4...v1.8.5) (2026-05-11)
 
 ### Dependencies
