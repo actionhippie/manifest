@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.9.1](https://github.com/actionhippie/manifest/compare/v1.9.0...v1.9.1) (2026-06-22)
+
+### Dependencies
+
+* **patch:** update docker digests ([#71](https://github.com/actionhippie/manifest/issues/71)) ([742fab9](https://github.com/actionhippie/manifest/commit/742fab921c9da9ac134773dfbc63b4112767cd1f))
+* **patch:** update docker digests ([#72](https://github.com/actionhippie/manifest/issues/72)) ([02b7ccb](https://github.com/actionhippie/manifest/commit/02b7ccb4efe38fab09ea9727f66a300a4ff46baf))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([b8321c8](https://github.com/actionhippie/manifest/commit/b8321c87375fc29b6dc02f665031b270e8222d52))
+
 ## [1.9.0](https://github.com/actionhippie/manifest/compare/v1.8.5...v1.9.0) (2026-06-15)
 
 ### Dependencies
